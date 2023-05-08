@@ -1,6 +1,6 @@
 <template>
   <footer class="max-w-screen-xl px-8 mx-auto">
-    <div class="w-full border-y border-[#DDDDDD]">
+    <!-- <div class="w-full border-y border-[#DDDDDD]">
       <div class="grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
         <div
           class="md:w-full lg:w-full w-full sm:w-1/2 xl:w-fit flex flex-col sm:flex-row sm:px-6 py-6 sm:py-12 sm:space-x-10 sm:border-r-0 border-[#DDDDDD]"
@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900">
       &copy; Copyright 2022 NEFA LLC. All rights reserved
     </div>

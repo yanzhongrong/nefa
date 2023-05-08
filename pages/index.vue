@@ -1,8 +1,136 @@
 <template>
   <div class="w-full">
     <!-- Hero section -->
-    <section id="hero" class="w-full pb-24">
+    <section id="hero" class="w-full pb-24 px-24">
       <BaseSection>
+        <div class="col-span-12 lg:col-span-6 text-center ">
+          <div class="text-white text-80 font-bold mt-20 w-full">Stable Diffusion Web UI</div>
+          <div class="text-white text-22 mt-10 ">加快您的创作速度，释放您的想象力，让Stable </div>
+          <div class="text-white text-22 mt-1 ">Diffusion Web UI成为您最好的创作伴侣！</div>
+          <base-button class="md:px-16 py-2 mt-10 text-22 font-black rounded-lg bg-[#FF0000] text-white">
+            开始创作
+          </base-button>
+          <img class="mt-10 mx-auto" width="919" :src="require('~/assets/img/mac_ipad_iphone.jpg')" alt="">
+        </div>
+        <!-- 功能特点 -->
+        <div class="text-center mt-20 relative">
+          <div class="text-white text-42 font-semibold">TINY SD 功能特点</div>
+          <img
+            data-aos="fade-up"
+            data-aos-delay="200"
+            :src="require('~/assets/img/pattern/star.png')"
+            class="hidden sm:block absolute -top-1 sm:-top-2 right-16 lg:right-0 lg:left-[30rem] w-8"
+          />
+        </div>
+
+        <!-- 配图1 -->
+        <div class="flex justify-around">
+          <img 
+            class="mt-10" width="50%" data-aos="fade-right"
+            aos-init aos-animate  :src="require('~/assets/img/illustration1.png')" alt="">
+          <div class="ml-20 mt-14">
+            <div class="text-white text-48 font-semibold">随时随地创作</div>
+            <div class="text-white text-28 mt-10">通过移动设备实现随时随地的创作，摆脱桌面电脑的限制</div>
+            <div class="text-white text-opacity-60 text-20 mt-6" data-aos="fade-down" data-aos-once="true" data-aos-delay="300">可以在电脑、iPad、手机等设备上畅享创作的自由和便捷，无论何时何地，不受平台及配置限制，您都可以随心所欲地使用它们来创作</div>
+          </div>
+        </div>
+
+        <!-- 配图2 -->
+        <div class="flex justify-around mt-10">
+          <div class="mr-20 mt-14">
+            <div class="text-white text-48 font-semibold">简单上手</div>
+            <div class="text-white text-28 mt-10">消除本地部署的复杂性，无需编写代码，通过一键操作即可轻松实现</div>
+            <div class="text-white text-opacity-60 text-20 mt-6" data-aos="fade-down" data-aos-once="true" data-aos-delay="300">复杂的部署操作及维护交给我们，让你更多精力专注在创意设计</div>
+          </div>
+          <img class="mt-10" width="50%" data-aos="fade-left" aos-init aos-animate  :src="require('~/assets/img/illustration2.png')" alt="">
+        </div>
+
+        <!-- 配图3 -->
+        <div class="flex justify-around mt-10">
+          <img 
+            class="mt-10 aos-init aos-animate" 
+            data-aos="fade-right"
+            data-aos-once="true" width="50%" :src="require('~/assets/img/illustration3.png')" alt="">
+          <div class="ml-20 mt-14">
+            <div class="text-white text-48 font-semibold">无需硬件</div>
+            <div class="text-white text-28 mt-10">节省昂贵的机器配置及显卡费用</div>
+            <div class="text-white text-opacity-60 text-20 mt-6" data-aos="fade-down" data-aos-once="true" data-aos-delay="300">借助云计算和虚拟化技术，你可以在不需要拥有昂贵的机器配置和显卡的情况下，轻松地进行各种创作活动</div>
+          </div>
+        </div>
+
+        <!-- 配图4 -->
+        <div class="flex justify-around mt-10">
+          <div class="mr-20 mt-14">
+            <div class="text-white text-48 font-semibold">模型库丰富</div>
+            <div class="text-white text-28 mt-10">模型库全面丰富，省去更多时间，提高创作效率</div>
+            <div class="text-white text-opacity-60 text-20 mt-6" data-aos="fade-down" data-aos-once="true" data-aos-delay="300">模型陆续更新补充</div>
+          </div>
+          <img class="mt-10" width="50%"  :src="require('~/assets/img/illustration2.png')" alt="">
+        </div>
+
+        <!-- 配图5 -->
+        <div class="flex justify-around mt-10">
+          <img 
+            class="mt-10" 
+            data-aos="fade-right"
+            data-aos-once="true" width="50%"  :src="require('~/assets/img/illustration5.jpg')" alt="">
+          <div class="ml-20 mt-14">
+            <div class="text-white text-48 font-semibold">支持中文</div>
+            <div class="text-white text-28 mt-10">界面支持中文，更直观准确的进行操作</div>
+            <div class="text-white text-opacity-60 text-20 mt-6" data-aos="fade-down" data-aos-once="true" data-aos-delay="300">中文界面不仅提供了更加友好的用户体验，让用户更加舒适和自如地进行操作</div>
+          </div>
+        </div>
+
+        <!-- 作品展示 -->
+        <div class="text-center mt-20 relative">
+          <div class="text-white text-42 font-semibold aos-init aos-animate" data-aos="flip-down">作品展示</div>
+          <div class="text-white text-22 font-semibol">基于Stable Diffusion Web UI设计</div>
+          <img
+            data-aos="fade-up"
+            data-aos-delay="200"
+            :src="require('~/assets/img/pattern/star.png')"
+            class="hidden sm:block absolute -top-1 sm:-top-2 right-16 lg:right-0 lg:left-[30rem] w-8"
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-delay="300"
+            :src="require('~/assets/img/pattern/ellipse-2.png')"
+            class="hidden sm:block absolute top-8 sm:top-24 right-64 sm:right-96 xl:right-[32rem] w-6"
+          />
+
+          <!-- 瀑布流 -->
+          <div ref="waterfall" class="w-full relative h-1100 mt-10">
+            <div 
+              v-for="(item, index) in imgsArr_c" 
+              :key="index"
+              ref="imgBox"
+              class="absolute rounded-20 p-1" 
+              :style="{width: imgWidth + 'px', height: item._height + 'px'}" 
+              >
+              <img width="100%" class="rounded-20 opacity-0" :data-src="item.src" />
+            </div>
+            <div class="absolute bottom-0 w-full h-340 text-header-gradient"></div>
+          </div>
+
+        </div>
+
+        <!-- 功能建议 -->
+        <div class="text-center mt-20 relative">
+          <div class="text-white text-42 font-semibold aos-init aos-animate" data-aos="flip-down">功能建议</div>
+          <textarea name="story" class="mt-10 w-700 bg-[#8e8e8e] rounded-lg bg-opacity-20 border-transparent text-white text-16 text-opacity-20" rows="7" cols="90">
+            您需要什么模型或者有什么建议可以给我们留言，我们非常期待您的声音
+          </textarea>
+          <div>
+            <input type="email" placeholder="请输入您的邮箱地址" class="mt-2 w-700 bg-[#8e8e8e] text-16 border-none rounded-lg bg-opacity-20 text-white text-opacity-20"/>
+          </div>
+          <BaseButton
+            class="w-356 mt-5 bg-white px-8 py-2  text-black"
+          >
+            立即留言
+          </BaseButton>
+        </div>
+      </BaseSection>
+      <!-- <BaseSection>
         <div class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
           <span data-aos="fade-right" data-aos-once="true" class="text-base text-gradient font-semibold uppercase"
             >Sign Up Today</span
@@ -36,6 +164,11 @@
             </BaseButton>
           </div>
         </div>
+
+
+
+
+
         <div class="hidden sm:block col-span-12 lg:col-span-6">
           <div class="w-full">
             <img
@@ -71,231 +204,7 @@
           :src="require('~/assets/img/pattern/star.png')"
           class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
         />
-      </BaseSection>
-    </section>
-
-    <!-- Crypto statistic section -->
-    <section
-      class="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
-    >
-      <div class="w-full flex flex-col lg:flex-row items-center justify-center">
-        <LandingCryptoStatistic
-          data-aos="fade-up"
-          title="🔥 Trending"
-          :datasets="trendings"
-          class="xl:border-r border-gray-200 lg:px-8"
-        />
-        <LandingCryptoStatistic
-          data-aos="fade-up"
-          data-aos-delay="150"
-          title="🚀 Top Gainers"
-          :datasets="topGainers"
-          class="xl:border-r border-gray-200 lg:px-8"
-        />
-        <LandingCryptoStatistic
-          data-aos="fade-up"
-          data-aos-delay="300"
-          title="💎 Recently Added"
-          :datasets="recents"
-          class="lg:px-8"
-        />
-      </div>
-    </section>
-
-    <!-- Buy and trade section -->
-    <section class="w-full my-24">
-      <BaseSection>
-        <LandingBuyTradeImage class="sm:hidden mb-8" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
-          <h2 class="text-4xl font-semibold sm:pr-8 xl:pr-12">
-            Buy & trade on the <br class="hidden sm:block" />
-            original crypto exchange.
-          </h2>
-          <p class="paragraph">
-            Buy now and get 40% extra bonus Minimum pre-sale amount 25 Crypto Coin. We accept BTC crypto-currency
-          </p>
-          <div class="space-y-6 lg:pr-12">
-            <LandingExchange
-              title="Amount"
-              name="amount"
-              type="number"
-              default-value="5.000"
-              :exchange-selected="currencySelected"
-              :exchanges="currencies"
-            />
-            <LandingExchange
-              title="Get"
-              name="get"
-              type="number"
-              default-value="0.10901"
-              :exchange-selected="cryptoSelected"
-              :exchanges="cryptocurrencies"
-            />
-            <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium">Buy Now</BaseButton>
-          </div>
-        </div>
-        <LandingBuyTradeImage data-aos="fade-left" class="hidden sm:block" />
-      </BaseSection>
-    </section>
-
-    <!-- Partners section -->
-    <section class="bg-partner relative max-w-full sm:mx-6 my-24 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
-        <h3 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold">Trusted Partners Worldwide</h3>
-        <p data-aos="flip-down" class="paragraph">We're partners with countless major organisations around the globe</p>
-        <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
-          <LandingPartnerImage
-            v-for="img in ['clever.png', 'diamon-cutts.png', 'swiss-finance.png', 'gambio.png']"
-            :key="img"
-            :img="img"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Credit card section -->
-    <section class="w-full my-36">
-      <BaseSection data-aos="fade-down">
-        <div class="col-span-12 lg:col-span-7">
-          <div class="w-full">
-            <img :src="require('~/assets/img/nefa-cc.webp')" class="w-[95%]" alt="" />
-          </div>
-        </div>
-        <div class="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20">
-          <h2 class="text-4xl font-semibold">
-            Introducing the <span class="text-header-gradient">NEFA</span> Credit Card
-          </h2>
-          <p class="paragraph">Subject to cardholder and rewards terms which will be available at application.</p>
-          <ul class="space-y-4 sm:space-y-2">
-            <LandingListItem title="Up to 3% back on purchases" />
-            <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
-            <LandingListItem title="No annual fee" />
-          </ul>
-          <BaseButton
-            class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-gradient border border-[#0c66ee] text-base"
-            >Join the waitlist</BaseButton
-          >
-        </div>
-      </BaseSection>
-    </section>
-
-    <!-- Advanced trading tools section -->
-    <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden">
-      <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
-        <LandingTradingToolImage class="sm:hidden" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
-          <h2 class="text-4xl font-semibold">Advanced Trading <span class="text-header-gradient">Tools</span></h2>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">Professional Access, Non-stop Availability</h4>
-            <p class="paragraph text-sm xl:text-base">
-              We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-              reliable order execution and constant uptime.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">A Range of Powerful Apis</h4>
-            <p class="paragraph text-sm xl:text-base">
-              Set up your own trading interface or deploy your algorithmic strategy with our high-performance FIX and
-              HTTP APIs. Connect to our WebSocket for real-time data streaming.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">Customer Support</h4>
-            <p class="paragraph text-sm xl:text-base">
-              Premium 24/7 support available to all customers worldwide by phone or email. Dedicated account managers
-              for partners.
-            </p>
-          </div>
-          <div class="flex flex-col sm:flex-row">
-            <BaseButton class="px-10 py-4 bg-inherit text-gradient border border-[#4A8FF6] text-base">
-              Get Started
-            </BaseButton>
-            <BaseButton class="bg-inherit text-[#4A8FF6] px-10 py-4 text-center underline rounded-full">
-              Learn More
-            </BaseButton>
-          </div>
-        </div>
-        <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" />
-      </div>
-    </section>
-
-    <!-- Industry-leading security section -->
-    <section class="w-full my-24">
-      <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6">
-          <div class="w-full">
-            <img :src="require('~/assets/img/industry-leading-security.webp')" class="w-full" alt="" />
-          </div>
-        </div>
-        <div data-aos="fade-left" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8">
-          <h2 class="text-4xl font-semibold">Industry-leading security from day one</h2>
-          <ul class="space-y-8 sm:space-y-4">
-            <LandingListItem title="Safety, security and compliance">
-              <p class="text-sm text-gray-700 leading-relaxed">
-                NEFA is a licensed New York trust company that undergoes regular bank exams and is subject to the
-                cybersecurity audits conducted by the New York Department of Financial Services.
-                <span class="underline">Learn more</span> about our commitment to security.
-              </p>
-            </LandingListItem>
-            <LandingListItem title="Hardware security keys">
-              <p class="text-sm text-gray-700 leading-relaxed">
-                With NEFA you can secure your account with a hardware security key via WebAuthn.
-              </p>
-            </LandingListItem>
-            <LandingListItem title="SOC Certifications">
-              <p class="text-sm text-gray-700 leading-relaxed">
-                NEFA is <span class="underline">SOC 1 Type 2</span> and
-                <span class="underline">SOC 2 Type 2</span> compliant. We are the world’s first cryptocurrency exchange
-                and custodian to complete these exams.
-              </p>
-            </LandingListItem>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Getting started section -->
-    <section class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full py-16 flex flex-col items-center">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">
-          Get started in just a few minutes
-        </h2>
-        <div
-          data-aos="fade-up"
-          class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
-        >
-          <LandingStep v-for="step in steps" :key="step.title" :step="step" />
-          <img
-            :src="require('~/assets/img/getting-started/arrow.png')"
-            class="hidden lg:inline-block absolute top-32 left-64 xl:left-[22rem] w-24 xl:w-[9.5rem]"
-            alt=""
-          />
-          <img
-            :src="require('~/assets/img/getting-started/arrow.png')"
-            class="hidden lg:inline-block absolute top-32 right-64 xl:right-[22rem] w-24 xl:w-[9.5rem]"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ section -->
-    <section class="w-full my-24">
-      <BaseSection>
-        <div data-aos="fade-right" data-aos-delay="150" class="col-span-12 lg:col-span-6">
-          <div class="w-full">
-            <img :src="require('~/assets/img/faq.webp')" class="w-full" alt="" />
-          </div>
-        </div>
-        <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8">
-          <span class="text-base text-gradient font-semibold uppercase mb-4 sm:mb-2">Support</span>
-          <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6">Frequently asked questions</h2>
-
-          <ul class="shadow-box">
-            <BaseAccordion v-for="(accordion, index) in accordions" :key="index" :accordion="accordion" />
-          </ul>
-        </div>
-      </BaseSection>
+      </BaseSection> -->
     </section>
 
     <div class="w-full my-10 flex justify-center">
@@ -320,195 +229,150 @@ export default {
   mixins: [aosMixin],
   data() {
     return {
-      selected: 0,
-      dropdownConcurency: false,
-      dropdownCrypto: false,
-      currencySelected: {
-        img: 'country-icon/eng.png',
-        name: 'USD',
-      },
-      currencies: [
-        {
-          img: 'country-icon/eng.png',
-          name: 'USD',
-        },
+      imgsArr: [
+        { src: require('~/assets/img/works1.jpg') },
+        { src: require('~/assets/img/works2.jpg') },
+        { src: require('~/assets/img/works3.jpg') },
+        { src: require('~/assets/img/works4.jpg') },
+        { src: require('~/assets/img/works5.jpg') },
+        { src: require('~/assets/img/works6.jpg') },
+        { src: require('~/assets/img/works7.jpg') },
+        { src: require('~/assets/img/works8.jpg') },
+        { src: require('~/assets/img/works9.jpg') },
+        { src: require('~/assets/img/works10.jpg') },
+        { src: require('~/assets/img/works11.jpg') },
+        { src: require('~/assets/img/works12.jpg') },
       ],
-      cryptoSelected: {
-        img: 'crypto-icon/bitcoin.png',
-        name: 'BTC',
-      },
-      cryptocurrencies: [
-        {
-          img: 'crypto-icon/bitcoin.png',
-          name: 'BTC',
-        },
-      ],
-      trendings: [
-        {
-          id: 1,
-          name: 'Bitcoin',
-          price: 43180.13,
-          logo: 'bitcoin.png',
-          increase: true,
-          data: [40, 35, 60, 75, 60, 75, 50],
-        },
-        {
-          id: 2,
-          name: 'Ethereum',
-          price: 3480.65,
-          logo: 'ethereum.png',
-          increase: false,
-          data: [25, 30, 60, 50, 80, 55, 80],
-        },
-        {
-          id: 3,
-          name: 'Solana',
-          price: 150.2,
-          logo: 'solana.png',
-          increase: true,
-          data: [40, 45, 40, 80, 50, 60, 35],
-        },
-        {
-          id: 4,
-          name: 'Dogecoin',
-          price: 0.1572,
-          logo: 'dogecoin.png',
-          increase: true,
-          data: [35, 70, 60, 80, 50, 60, 40],
-        },
-      ],
-      topGainers: [
-        {
-          id: 1,
-          name: 'PAPPAY',
-          price: 0.00374,
-          logo: 'pappay.png',
-          increase: true,
-          data: [30, 50, 45, 60, 70, 40, 45],
-        },
-        {
-          id: 2,
-          name: 'Bitcoin Asia',
-          price: 0.02096,
-          logo: 'bitcoin-asia.png',
-          increase: true,
-          data: [25, 60, 50, 60, 35, 50, 70],
-        },
-        {
-          id: 3,
-          name: 'MoonRock',
-          price: 0.004907,
-          logo: 'moonrock.png',
-          increase: true,
-          data: [40, 35, 40, 25, 50, 70, 45],
-        },
-        {
-          id: 4,
-          name: 'NinjaFloki',
-          price: 0.000123,
-          logo: 'ninjafloki.png',
-          increase: true,
-          data: [45, 35, 40, 30, 25, 45, 35],
-        },
-      ],
-      recents: [
-        {
-          id: 1,
-          name: 'MetaCraft',
-          price: 0.0608,
-          logo: 'metacraft.png',
-          increase: false,
-          data: [40, 50, 45, 60, 35, 40, 45],
-        },
-        {
-          id: 2,
-          name: 'Frog',
-          price: 0.5875,
-          logo: 'frog.png',
-          increase: false,
-          data: [25, 50, 45, 48, 40, 60, 45],
-        },
-        {
-          id: 3,
-          name: 'Musk Doge',
-          price: 0.04041,
-          logo: 'musk-doge.png',
-          increase: true,
-          data: [25, 35, 60, 45, 50, 45, 45],
-        },
-        {
-          id: 4,
-          name: '2SHARE',
-          price: 1366.24,
-          logo: '2share.png',
-          increase: true,
-          data: [35, 30, 60, 50, 35, 45, 40],
-        },
-      ],
-      accordions: [
-        {
-          title: 'Why should I choose NEFA?',
-          description:
-            "We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over 8 million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.",
-        },
-        {
-          title: 'How secure is NEFA?',
-          description:
-            "We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.",
-        },
-        {
-          title: 'Do I have to buy a whole Bitcoin?',
-          description:
-            "We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.",
-        },
-        {
-          title: 'How do I actually buy Bitcoin?',
-          description:
-            "We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.",
-        },
-      ],
-      steps: [
-        {
-          img: 'sign-up.png',
-          title: 'Sign Up',
-          description:
-            'Sign up for your free NEFA Wallet on web, iOS or Android and follow our easy process to set up your profile',
-        },
-        {
-          img: 'fund.png',
-          title: 'Fund',
-          description:
-            'Choose your preferred payment method such as bank transfer or credit card to top up your NEFA Wallet',
-        },
-        {
-          img: 'buy-crypto.png',
-          title: 'Buy Crypto',
-          description:
-            'Buy Bitcoin or Ethereum, then securely store it in your Wallet or send it on easily to your friends anywhere',
-        },
-      ],
+      imgsArr_c: [], // 渲染的图片
+      imgCol: 4, // 图片列数
+      imgGap: 5, // 图片间间隔
+      loadedCount: 0,
+      imgBoxEls: [], // 所有 img-box 元素
+      beginIndex: 0,
+      colsHeightArr: [], // 保存当前每一列的高度
+      reachBottomDistance: 20, // 滚动触底距离，触发加载新图片
+      viewHeight: 0, // 窗口视图大小
+    }
+  },
+  computed: {
+    isMobile() {
+      return !!navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i);
+    },
+    // 容器 waterfall 的宽度
+    waterfallWidth() {
+      return this.$refs.waterfall.clientWidth;
+    },
+    // 图片宽度
+    imgWidth() {
+      return this.colWidth - 2 * this.imgGap;
+    },
+    // 列宽度
+    colWidth() {
+      return this.waterfallWidth / this.colNum;
+    },
+    // 列数
+    colNum() {
+      return this.isMobile ? 2 : this.imgCol;
+    }
+  },
+  watch: {
+    imgsArr(newVal, oldVal) {
+      if (this.imgsArr_c.length > newVal.length || (this.imgsArr_c.left > 0 && newVal[0] && !newVal[0]._height))
+        this.reset();
+      this.preLoad();
+    }
+  },
+  mounted() {
+    this.viewHeight = (document.documentElement.clientHeight === 0) ? document.body.clientHeight : document.documentElement.clientHeight;
+    this.preLoad();
+  },
+  methods: {
+    // 预加载 设置并保存图片宽高
+    preLoad() {
+      // forEach 无法通过 item 直接修改数组元素，需用数组下标修改
+      this.imgsArr.forEach((item, index) => {
+        if (index < this.loadedCount)
+          return;
+        if (!item.src) {
+          this.imgsArr[index]._height = "0";
+          ++this.loadedCount;
+          if (this.imgsArr.length === this.loadedCount) {
+            this.preloaded();
+          }
+        } else {
+          const img = new Image();
+          img.src = item.src;
+          img.onload = img.onerror = (e) => {
+            // 若加载失败则设置图片高度与宽度一致，加载成功则动态计算图片高度
+            this.imgsArr[index]._height = e.type === "load" ? Math.round(this.imgWidth * (img.height / img.width)) : this.imgWidth
+            if (e.type === "error") {
+              this.imgsArr[index]._error = true;
+            }
+            ++this.loadedCount;
+            if (this.imgsArr.length === this.loadedCount) {
+              this.preloaded();
+            }
+          }
+        }
+      })
+    },
+    preloaded() {
+      // 开始渲染
+      this.imgsArr_c = [].concat(this.imgsArr);
+      this.$nextTick(() => {
+        // 对每个元素进行排列
+        this.waterfall();
+      });
+    },
+    // waterfall，等到整个视图都渲染完毕再执行
+    waterfall() {
+      // 等到整个视图都渲染完毕再执行
+      this.imgBoxEls = this.$refs.imgBox;
+      if (!this.imgBoxEls) return;
+      let top, left, height;
+      if (this.beginIndex === 0) this.colsHeightArr = []
+      for (let i = this.beginIndex; i < this.imgBoxEls.length; ++i) {
+        if (!this.imgBoxEls[i]) return;
+        height = this.imgBoxEls[i].offsetHeight;
+        // 第一行
+        if (i < this.colNum) {
+          this.colsHeightArr.push(height);
+          top = 0;
+          left = i * this.colWidth;
+        } else {
+          // 找到最低的高度和其索引
+          const minHeight = Math.min.apply(null, this.colsHeightArr);
+          const minIdx = this.colsHeightArr.indexOf(minHeight);
+          top = minHeight;
+          left = minIdx * this.colWidth;
+          this.colsHeightArr[minIdx] += height;
+        }
+        
+        // 设置 img-box 位置
+        this.imgBoxEls[i].style.top = top + "px";
+        this.imgBoxEls[i].style.left = left + "px";
+        // 当前图片在窗口内，则加载
+        // if (top < this.viewHeight) {
+          const imgEl = this.imgBoxEls[i].children[0];
+          imgEl.src = imgEl.getAttribute("data-src");
+          imgEl.style.opacity = 1;
+          imgEl.style.transform = "scale(1)";
+        // }
+      }
+      this.beginIndex = this.imgBoxEls.length;
+    },
+    reset() {
+      this.imgsArr_c = [];
+      this.beginIndex = 0;
+      this.loadedCount = 0;
     }
   },
 }
 </script>
 <style scoped>
 .text-header-gradient {
-  background: rgb(57, 132, 244);
-  background: linear-gradient(169.4deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%);
-  background-clip: text;
+  z-index: 999;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
   -webkit-text-fill-color: transparent;
-}
-.bg-partner {
-  background: url('../assets/img/partner/background.png');
-  background-size: cover;
-  background-position: center;
-}
-.bg-trading-tools {
-  background: url('../assets/img/bg-trading-tools.webp');
-  background-size: cover;
-  background-position: center;
-}
-.max-h-0 {
-  max-height: 0;
 }
 </style>
